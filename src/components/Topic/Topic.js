@@ -4,7 +4,6 @@ import './Topic.css';
 
 const Topic = ({ topic }) => {
     const { id, logo, name, total } = topic;
-    console.log(topic);
     return (
         <div>
             <div className='container mt-5'>
@@ -16,7 +15,8 @@ const Topic = ({ topic }) => {
                         <div className="col-md-6">
                             <div className="card-body">
                                 <h1 className="card-title fw-bold">{name}</h1>
-                                <p className="card-text fs-5">I hope you are a great learner. You know a lots of thing about {name}.Let's check it.We can shine together.</p>
+                                <p className="card-text fs-5">I hope you are a great learner.I hope you know a lots of thing about {name}.Let's check it.We can shine together.</p>
+                                <h4 className='fw-semibold'>Total Questions: {total}</h4>
                                 <button className='btn btn-secondary'>
                                     <Link className='text-decoration-none text-white' to={`quiz/${id}`}>Let's Go</Link>
                                 </button>
