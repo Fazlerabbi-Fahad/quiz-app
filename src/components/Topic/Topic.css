@@ -1,0 +1,8 @@
+.home-card {
+    box-shadow: 10px 10px 8px 10px #888888;
+    background-color: #c8d6e5;
+}
+
+.home-img {
+    border-right: 5px solid black;
+}

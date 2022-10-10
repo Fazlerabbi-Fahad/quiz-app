@@ -1,0 +1,13 @@
+.icon {
+    height: 30px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    font-weight: 900;
+    font-size: 18px;
+}
