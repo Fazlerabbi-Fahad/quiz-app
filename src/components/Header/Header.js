@@ -16,7 +16,7 @@ const Header = () => {
                 <Nav className="justify-content-center fw-bold nav-text" activeKey="/">
                     <Nav.Item>
                         <Nav.Link>
-                            <NavLink to='/home'>Home</NavLink>
+                            <NavLink to='/'>Home</NavLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>

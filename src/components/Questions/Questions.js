@@ -6,12 +6,18 @@ const Questions = () => {
     const questions = useLoaderData();
     const question = questions.data;
     const quiz = question.questions;
-
+    let sum = 0;
     const CheckCorrectAnswer = (answer, correctAnswer) => {
         if (answer !== correctAnswer) {
-            alert('Your answer is wrong');
+            alert('Your Answer is Wrong');
+        } else {
+            sum = sum + 1;
         }
+        return sum;
     };
+    console.log(sum);
+
+
 
 
     return (
@@ -25,6 +31,7 @@ const Questions = () => {
                     CheckCorrectAnswer={CheckCorrectAnswer}></Quiz>)
             }
             <button className='btn text-decoration-none mb-5 border bg-secondary'><Link className='text-decoration-none text-white' to='/home'>Go to homepage</Link></button>
+
         </div>
     );
 };

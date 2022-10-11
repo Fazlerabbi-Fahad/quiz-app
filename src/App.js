@@ -13,12 +13,12 @@ function App() {
       element: <Main></Main>,
       children: [
         {
-          path: '/home',
+          path: '/',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>,
         },
         {
-          path: '/home/quiz/:quizId',
+          path: '/quiz/:quizId',
           loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
@@ -26,11 +26,17 @@ function App() {
         },
         {
           path: 'analytics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Analytics></Analytics>
         },
         {
           path: 'blog',
           element: <Blog></Blog>
+        },
+        {
+
+          path: '*',
+          element: <h1>404 Page Not Found</h1>,
         }
       ]
     }
