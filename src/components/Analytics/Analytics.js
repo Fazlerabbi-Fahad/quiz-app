@@ -22,7 +22,7 @@ const Analytics = () => {
             </div>
 
 
-            <div className='w-100 h-100 m-5 p-5'>
+            <div className='m-5 p-5 analyics-session'>
                 <LineChart
                     width={900}
                     height={500}

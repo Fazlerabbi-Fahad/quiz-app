@@ -30,7 +30,7 @@ const Quiz = (props) => {
                 <div className="row">
                     {
                         options.map(option =>
-                            <button className='btn border col-5 me-5 mt-3 btn-quiz'
+                            <button className='btn border col-5 col-sm-8 me-5 mt-3 btn-quiz'
                                 onClick={() => props.CheckCorrectAnswer(option, correctAnswer)}>{option}</button>)
                     }
                 </div>
